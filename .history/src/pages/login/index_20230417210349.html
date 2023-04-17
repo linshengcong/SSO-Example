@@ -1,0 +1,73 @@
+<!--
+ * @Author: Shengcong.Lin linshengcong@foxmail.com
+ * @Date: 2021-09-08 17:44:02
+ * @LastEditors: Shengcong.Lin linshengcong@foxmail.com
+ * @LastEditTime: 2023-04-17 21:03:48
+ * @FilePath: /SSO-Example/src/pages/login/index.html
+ * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>加载中</title>
+    <script type="text/javascript">
+      class Loading {
+        show(text = '加载中') {
+          const dom = document.createElement('div');
+          const htmlDom = document.querySelector('html');
+          dom.innerHTML = `<div class="loading" style="display: inline-block;
+                                                       z-index: 9999;
+                                                       position: fixed;
+                                                       top: 0;
+                                                       left: 0;
+                                                       width: 100%;
+                                                       height: 100%;
+                                                       background-color: rgba(255, 255, 255, 1);">
+                      </div>
+                    `;
+          htmlDom.appendChild(dom);
+        }
+        hide() {
+          const loading = document.querySelector('.loading');
+          if (loading) removeElement(loading);
+        }
+      }
+      let loading = new Loading();
+      loading.show();
+    </script>
+  </head>
+
+  <body>
+    <div class="login hide">
+      <img src="../../assets/images/loginOut.png" alt="退出" class="logout" />
+      <div class="account-index">
+        <!-- <div class="login-logo">
+          <img src="../../assets/images/slogo.jpg" alt="" />
+        </div> -->
+
+        <div class="login-user">
+          <span>用户名&nbsp;:</span>
+          <input type="text" autocomplete="off" class="input-login" id="user-name" placeholder="请输入用户名" />
+        </div>
+        <div class="login-user">
+          <span>密&nbsp;&nbsp;&nbsp;码&nbsp;:</span>
+          <input type="password" autocomplete="off" class="input-login" id="user-pwd" placeholder="请输入密码" />
+        </div>
+        <div class="login-user" id="verificationCode" style="display: none">
+          <span>验&nbsp;&nbsp;证&nbsp;码&nbsp;:</span>
+          <input type="text" autocomplete="off" class="input-login verification-input" placeholder="请输入验证码" />
+          <img class="validate-img" />
+        </div>
+        <div class="login-user">
+          <div class="forget-password">忘记密码？</div>
+        </div>
+        <div class="login-user" style="padding-left: 110px">
+          <div class="account-index-button" id="handle-login">登录</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

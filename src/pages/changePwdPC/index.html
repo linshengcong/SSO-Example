@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>统一认证</title>
+  </head>
+  <body>
+    <script src="https://cdn.jsdelivr.net/npm/es6-promise@4/dist/es6-promise.auto.min.js"></script>
+    <div class="changePasswordPage">
+      <div class="changePasswordPage-title">请修改密码</div>
+
+      <div class="changePasswordPage-account" style="display: none">
+        <span>账号</span>
+        <select id="select" placeholder="请选择">
+          <option style="display: none" value disabled="true">请选择</option>
+        </select>
+      </div>
+
+      <div class="changePasswordPage-old-pass">
+        <span>旧密码</span>
+        <input type="password" class="old-password" />
+      </div>
+      <div class="changePasswordPage-pass">
+        <span>新密码</span>
+        <input type="password" class="new-password" />
+      </div>
+      <div class="desc">*新密码至少包含一位数字和字母,不能和原密码相同</div>
+      <div class="changePasswordPage-surePass">
+        <span>确认密码</span>
+        <input type="password" class="change-password-confirm" />
+      </div>
+      <div class="changePasswordPage-tl" style="margin-top: 10px">*不能连续字符（如123、abc）连续3位或3位以上</div>
+      <div class="changePasswordPage-tl">=*不能相同字符（如111、aaa）连续3位或3位以上</div>
+
+      <div class="changePasswordPage-btn">
+        <span id="confirm-password">确认</span>
+      </div>
+    </div>
+  </body>
+</html>

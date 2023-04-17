@@ -1,0 +1,15 @@
+@function pxToVw($px) {
+  @return $px/375 * 100vw;
+}
+
+div {
+  text-align: center;
+  padding: 50px;
+  font-size: 30px;
+  font-weight: bold;
+}
+a {
+  display: block;
+  text-align: center;
+  padding: 20px;
+}

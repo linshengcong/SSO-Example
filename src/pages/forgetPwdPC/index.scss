@@ -1,0 +1,77 @@
+.forget-password {
+  position: relative;
+  top: 50px;
+  left: 0;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  .disabled {
+    opacity: 0.5;
+  }
+  .txt {
+    position: absolute;
+    left: calc(50% - 182px);
+    transform: translateX(-50%);
+    display: inline-block;
+    width: 162px;
+    text-align: right;
+    height: 30px;
+    line-height: 30px;
+  }
+
+  &-title {
+    font-family: PingFang-SC-Medium;
+    font-size: 16px;
+    line-height: 36px;
+    text-align: center;
+  }
+  &-phone,
+  &-code {
+    margin-top: 35px;
+    display: block;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    input {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 182px;
+      height: 30px;
+      background-color: #ffffff;
+      border: solid 1px #333333;
+      padding-left: 12px;
+    }
+  }
+  &-code {
+    margin-top: 105px;
+    margin-right: 0;
+    .get-code {
+      position: relative;
+      left: calc(50% + 91px);
+      display: inline-block;
+      margin-left: 22px;
+      width: 70px;
+      padding: 0 10px;
+      height: 30px;
+      line-height: 30px;
+      text-align: center;
+      background-color: #818286;
+      font-size: 14px;
+      color: #ffffff;
+      cursor: pointer;
+    }
+  }
+  &-confirm {
+    margin-top: 35px;
+    width: 86px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    background-color: #818286;
+    font-size: 14px;
+    color: #ffffff;
+    cursor: pointer;
+    margin-left: 50%;
+    transform: translateX(-50%);
+  }
+}

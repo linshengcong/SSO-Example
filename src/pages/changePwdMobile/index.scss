@@ -1,0 +1,109 @@
+@function pxToVw($px) {
+  @return $px/375 * 100vw;
+}
+
+.header {
+  display: flex;
+  width: 100%;
+  height: pxToVw(94);
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0px 1px 6px 0px rgba(0, 0, 0, 0.1);
+  color: #666666;
+  font-family: DFSongGB-W12;
+  font-weight: 600;
+  font-size: pxToVw(24);
+
+  .wrap {
+    margin-top: -1%;
+    margin-left: 5%;
+    width: pxToVw(200);
+  }
+
+  .header_font {
+    font-family: 'DFSongGB-W12-Proportiona.woff2';
+  }
+
+  .img-wrap {
+    width: pxToVw(139);
+    height: pxToVw(74);
+    margin-right: 6%;
+  }
+}
+
+.changePasswordPage {
+  margin: pxToVw(35) auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+  &--title {
+    font-family: PingFang-SC-Medium;
+    font-size: pxToVw(16);
+    line-height: pxToVw(36);
+  }
+  #select {
+    width: pxToVw(159);
+    height: pxToVw(30);
+    background-color: #ffffff;
+    border: solid 1px #333333;
+    text-align: left;
+  }
+  &-old-pass,
+  &-pass,
+  &-surePass,
+  &-account {
+    margin-right: 5px;
+    margin-top: pxToVw(20);
+    text-align: center;
+    font-size: pxToVw(14);
+    span {
+      width: pxToVw(60);
+      text-align: right;
+      color: #333333;
+      display: inline-block;
+      margin-right: pxToVw(5);
+    }
+    input {
+      width: pxToVw(149);
+      height: pxToVw(30);
+      background-color: #ffffff;
+      border: solid 1px #333333;
+      text-align: left;
+    }
+  }
+  &-old-pass {
+    margin-bottom: pxToVw(15);
+  }
+
+  .desc {
+    line-height: pxToVw(40);
+    font-size: pxToVw(12);
+    color: #fc0f0f;
+    -webkit-transform: scale(0.9);
+  }
+  &-tl {
+    font-size: pxToVw(12);
+    color: #818286;
+    line-height: pxToVw(30);
+    -webkit-transform: scale(0.9);
+  }
+  &-btn {
+    margin-top: pxToVw(35);
+    margin-left: calc(50% - pxToVw(86));
+    display: inline-block;
+    width: pxToVw(86);
+    height: pxToVw(30);
+    background-color: #818286;
+    font-size: pxToVw(14);
+    line-height: pxToVw(30);
+    color: #ffffff;
+    cursor: pointer;
+  }
+}
+
+#msgBox-main {
+  width: 70%;
+  min-width: 0;
+}

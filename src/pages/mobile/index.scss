@@ -1,0 +1,122 @@
+@function pxToVw($px) {
+  @return $px/375 * 100vw;
+}
+.mobile {
+  height: 100%;
+  width: 100%;
+  /* background: #f6f4f5; */
+  box-sizing: border-box;
+}
+
+.mobile-head {
+  height: pxToVw(56);
+  background: #ffffff;
+  text-align: center;
+  line-height: pxToVw(56);
+  font-size: pxToVw(16);
+  font-weight: 600;
+}
+
+.mobile-body {
+  box-sizing: border-box;
+  height: calc(95% - 56px);
+  margin: 5%;
+  background: #ffffff;
+  padding: 0 5% 0;
+}
+
+.mobile-login-logo {
+  display: flex;
+  justify-content: center;
+  // width: 70%;
+  padding-top: 10%;
+}
+
+.mobile-login-user {
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+  height: pxToVw(55);
+  width: 100%;
+  margin-top: 7%;
+  line-height: pxToVw(35);
+  position: relative;
+  align-items: center;
+  input {
+    font-size: pxToVw(14);
+    box-sizing: border-box;
+    width: 100%;
+    border: 1px solid #eee;
+    height: pxToVw(35);
+    border-radius: pxToVw(4);
+    vertical-align: middle;
+    padding: 0 pxToVw(12);
+  }
+  .validate-img {
+    vertical-align: middle;
+    display: inline-block;
+    float: right;
+    height: pxToVw(35);
+  }
+}
+
+.logout {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+}
+.verificationCode {
+  position: absolute;
+  right: 10%;
+  font-size: 12px;
+  color: #209cee;
+  display: inline-block;
+  height: 20px;
+  line-height: 20px;
+  top: 10px;
+}
+
+#handle-login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: pxToVw(35);
+  line-height: pxToVw(35);
+  width: 100%;
+  background: #727272;
+  color: #ffffff;
+  font-size: pxToVw(15);
+  text-align: center;
+  margin-top: 10%;
+  border-radius: pxToVw(5);
+}
+.login-Verification {
+  padding: 20px 20px 0 20px;
+  width: 310px;
+  height: 240px;
+  margin: auto;
+  background: #ffff;
+  box-sizing: content-box;
+}
+input.validate-code {
+  width: 50%;
+}
+
+.login-user {
+  width: 100%;
+  display: block;
+  height: pxToVw(35);
+  .forget-password {
+    display: block;
+    cursor: pointer;
+    float: right;
+  }
+}
+
+#msgBox-main {
+  width: 70%;
+  min-width: 0;
+}

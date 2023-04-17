@@ -1,0 +1,83 @@
+.changePasswordPage {
+  margin: 50px auto;
+  width: 600px;
+  text-align: center;
+
+  #select {
+    width: 182px;
+    height: 30px;
+    cursor: pointer;
+    line-height: 30px;
+    border: solid 1px #333333;
+    margin: 12px 0 20px 0;
+  }
+  &-title {
+    text-align: center;
+    margin: 35px 0;
+    font-family: PingFang-SC-Medium;
+    font-size: 16px;
+    line-height: 36px;
+    color: #000000;
+  }
+  &-old-pass,
+  &-pass,
+  &-surePass,
+  &-account {
+    margin-right: 80px;
+    span {
+      width: 80px;
+      text-align: right;
+      color: #333333;
+      display: inline-block;
+      margin-right: 15px;
+    }
+    input {
+      width: 182px;
+      height: 30px;
+      background-color: #ffffff;
+      border: solid 1px #333333;
+    }
+  }
+  &-old-pass {
+    margin-bottom: 15px;
+  }
+
+  .desc {
+    line-height: 40px;
+    font-size: 12px;
+    color: #fc0f0f;
+    width: 89%;
+    -webkit-transform: scale(0.9);
+    margin-left: 80px;
+  }
+
+  &-btn {
+    margin-top: 20px;
+    display: inline-block;
+    width: 86px;
+    height: 30px;
+    background-color: #818286;
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    line-height: 30px;
+    letter-spacing: 0px;
+    color: #ffffff;
+    cursor: pointer;
+    #confirm-password {
+      display: block;
+      width: 100%;
+    }
+  }
+  &-tl {
+    display: block;
+    width: 300px;
+    margin-left: calc(50% - 150px);
+    text-align: center;
+    font-size: 12px;
+    color: #818286;
+    line-height: 30px;
+    text-align: right;
+    -webkit-transform: scale(0.9);
+  }
+}
