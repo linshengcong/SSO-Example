@@ -10,4 +10,5 @@ npm-debug.log*
 *.ntvs*
 *.njsproj
 *.sln
+.history
 server.js
